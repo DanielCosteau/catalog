@@ -1,0 +1,84 @@
+- slug: amara
+  name: Amara
+  tagline: Fashion with regional poise
+  industry: moda
+  city: Саратов
+  verified: true
+  status: Участник реестра
+  summary: Небольшой fashion-бренд, выросший из локального ателье в узнаваемую марку одежды для городской аудитории.
+  description: Бренд сочетает локальную идентичность, лимитированные капсулы и аккуратную digital-подачу. В карточке акцент сделан на верификации, портфолио и понятном переходе в магазин.
+  audience: Для покупателей, локальных медиа и организаторов событий.
+  collaboration: Коллаборации, pop-up, участие в маркетах, поставки в локальные concept stores.
+  websiteUrl: "#"
+  websiteLabel: Перейти в бренд
+  accents: ["Verified", "Fashion", "Retail", "Editorial"]
+- slug: orbita-interactive
+  name: Orbita Interactive
+  tagline: Creative tech for cultural products
+  industry: it
+  city: Энгельс
+  verified: true
+  status: Участник реестра
+  summary: Digital-команда, которая работает на стыке продуктовой разработки, айдентики и сервисного дизайна.
+  description: Профиль демонстрирует зрелость команды, проектный стек и экспортный потенциал. Это сценарий для партнёров, инвесторов и коллабораций с институциями.
+  audience: Для заказчиков, инвесторов и государственных программ поддержки.
+  collaboration: Разработка сервисов, цифровой UX, бренд-платформы, витрины и интерактивы.
+  websiteUrl: "#"
+  websiteLabel: Смотреть кейс
+  accents: ["IT", "UX", "API", "Export-ready"]
+- slug: volga-type-lab
+  name: Volga Type Lab
+  tagline: Lettering, signage and visual systems
+  industry: dizayn
+  city: Саратов
+  verified: false
+  status: На модерации
+  summary: Студия визуальной коммуникации, работающая с типографикой, навигацией и айдентикой для городских пространств.
+  description: "Карточка демонстрирует, как выглядит бренд до финальной верификации: качественное портфолио уже доступно, а статус в реестре находится на этапе проверки."
+  audience: Для девелоперов, культурных центров и малого бизнеса.
+  collaboration: Навигационные системы, айдентика мест, наружная графика, фирменные наборы.
+  websiteUrl: "#"
+  websiteLabel: Открыть профиль
+  accents: ["Type", "Wayfinding", "Identity", "Pending"]
+- slug: bereg-zvuka
+  name: Берег Звука
+  tagline: Sound for cities, brands and stages
+  industry: music
+  city: Балаково
+  verified: true
+  status: Участник реестра
+  summary: Музыкальная студия и саунд-команда для мероприятий, городских событий и брендовых запусков.
+  description: На странице бренда важны кейсы, контакты для партнёрств и уверенный сигнал, что команда прошла проверку и готова к официальным проектам.
+  audience: Для ивент-агентств, фестивалей, медиа и муниципальных площадок.
+  collaboration: Саунд-дизайн, live-сеты, оформление событий, продакшн для видео и digital.
+  websiteUrl: "#"
+  websiteLabel: Связаться
+  accents: ["Music", "Events", "Production", "Trusted"]
+- slug: sol-volgi
+  name: Соль Волги
+  tagline: Local taste with product discipline
+  industry: gastronomy
+  city: Саратов
+  verified: true
+  status: Участник реестра
+  summary: Гастрономический бренд локальных продуктов с сильной упаковкой и туристическим потенциалом.
+  description: Этот профиль показывает, как каталог может работать как публичная витрина для покупателей и одновременно как витрина для B2B-партнёрств и городских событий.
+  audience: Для туристов, ритейла, городских маркетов и horeca-партнёров.
+  collaboration: Ритейл, подарочные наборы, события, гастропавильоны и сувенирные коллекции.
+  websiteUrl: "#"
+  websiteLabel: Узнать больше
+  accents: ["Food", "Tourism", "B2B", "Regional"]
+- slug: keramika-64
+  name: Керамика 64
+  tagline: Handcrafted objects with cultural memory
+  industry: craft
+  city: Хвалынск
+  verified: false
+  status: Предпроверка профиля
+  summary: Ремесленная мастерская, для которой цифровая витрина становится первым системным каналом продвижения за пределами локального круга.
+  description: Здесь особенно важны фотография работ, история происхождения и уверенный UX для прямого контакта без сложных бюрократических шагов.
+  audience: Для частных покупателей, кураторов ярмарок и дизайнеров интерьеров.
+  collaboration: Малые тиражи, интерьерные коллекции, подарки, выставки и локальные маркетплейсы.
+  websiteUrl: "#"
+  websiteLabel: Посмотреть работы
+  accents: ["Craft", "Ceramics", "Small batch", "Authentic"]
