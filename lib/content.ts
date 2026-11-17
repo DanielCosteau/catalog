@@ -1,6 +1,3 @@
-import fs from "node:fs";
-import path from "node:path";
-import yaml from "js-yaml";
 import { industries } from "./generated/industries";
 import { brands } from "./generated/brands";
 import { metrics } from "./generated/metrics";
@@ -69,14 +66,6 @@ export type SiteConfig = {
   region: string;
 };
 
-function readYamlFile<T>(filename: string): T {
-  const fullPath = path.join(process.cwd(), "content", "site", filename);
-  const source = fs.readFileSync(fullPath, "utf8");
-  return yaml.load(source) as T;
-}
-
-export function getIndustries() {
-  return readYamlFile<Industry[]>("industries.yml");
 export function getIndustries(): Industry[] {
   return industries as unknown as Industry[];
 }
@@ -84,9 +73,6 @@ export function getIndustries(): Industry[] {
 export function getIndustryBySlug(slug: string) {
   return getIndustries().find((item) => item.slug === slug);
 }
-
-export function getBrands() {
-  return readYamlFile<Brand[]>("brands.yml");
 
 export function getBrands(): Brand[] {
   return brands as unknown as Brand[];
@@ -99,25 +85,6 @@ export function getBrandBySlug(slug: string) {
 export function getBrandsByIndustry(industry: string) {
   return getBrands().filter((item) => item.industry === industry);
 }
-
-export function getMetrics() {
-  return readYamlFile<Metric[]>("metrics.yml");
-}
-
-export function getPersonas() {
-  return readYamlFile<Persona[]>("personas.yml");
-}
-
-export function getFaq() {
-  return readYamlFile<FAQ[]>("faq.yml");
-}
-
-export function getTimeline() {
-  return readYamlFile<TimelineItem[]>("timeline.yml");
-}
-
-export function getSiteConfig() {
-  return readYamlFile<SiteConfig>("site.yml");
 
 export function getMetrics(): Metric[] {
   return metrics as unknown as Metric[];
