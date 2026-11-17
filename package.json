@@ -32,4 +32,12 @@
     "tailwindcss": "^3.4.17",
     "typescript": "^5.8.3"
   }
+<<<<<<< HEAD
+=======
+  "scripts": {
+  "build:content": "node scripts/build-content.mjs",
+  "prebuild": "npm run build:content",
+  "predev": "npm run build:content"
+}
+>>>>>>> 54908a5 (Fix for cloudflare)
 }

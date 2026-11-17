@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 import fs from "node:fs";
 import path from "node:path";
 import yaml from "js-yaml";
+=======
+import { industries } from "./generated/industries";
+import { brands } from "./generated/brands";
+import { metrics } from "./generated/metrics";
+import { personas } from "./generated/personas";
+import { faq } from "./generated/faq";
+import { timeline } from "./generated/timeline";
+import { site } from "./generated/site";
+>>>>>>> 54908a5 (Fix for cloudflare)
 
 export type Industry = {
   slug: string;
@@ -62,6 +72,7 @@ export type SiteConfig = {
   region: string;
 };
 
+<<<<<<< HEAD
 function readYamlFile<T>(filename: string): T {
   const fullPath = path.join(process.cwd(), "content", "site", filename);
   const source = fs.readFileSync(fullPath, "utf8");
@@ -70,14 +81,23 @@ function readYamlFile<T>(filename: string): T {
 
 export function getIndustries() {
   return readYamlFile<Industry[]>("industries.yml");
+=======
+export function getIndustries(): Industry[] {
+  return industries as unknown as Industry[];
+>>>>>>> 54908a5 (Fix for cloudflare)
 }
 
 export function getIndustryBySlug(slug: string) {
   return getIndustries().find((item) => item.slug === slug);
 }
 
+<<<<<<< HEAD
 export function getBrands() {
   return readYamlFile<Brand[]>("brands.yml");
+=======
+export function getBrands(): Brand[] {
+  return brands as unknown as Brand[];
+>>>>>>> 54908a5 (Fix for cloudflare)
 }
 
 export function getBrandBySlug(slug: string) {
@@ -88,6 +108,7 @@ export function getBrandsByIndustry(industry: string) {
   return getBrands().filter((item) => item.industry === industry);
 }
 
+<<<<<<< HEAD
 export function getMetrics() {
   return readYamlFile<Metric[]>("metrics.yml");
 }
@@ -106,4 +127,24 @@ export function getTimeline() {
 
 export function getSiteConfig() {
   return readYamlFile<SiteConfig>("site.yml");
+=======
+export function getMetrics(): Metric[] {
+  return metrics as unknown as Metric[];
+}
+
+export function getPersonas(): Persona[] {
+  return personas as unknown as Persona[];
+}
+
+export function getFaq(): FAQ[] {
+  return faq as unknown as FAQ[];
+}
+
+export function getTimeline(): TimelineItem[] {
+  return timeline as unknown as TimelineItem[];
+}
+
+export function getSiteConfig(): SiteConfig {
+  return site as unknown as SiteConfig;
+>>>>>>> 54908a5 (Fix for cloudflare)
 }
